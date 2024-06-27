@@ -1,10 +1,8 @@
 package Models;
-
 import static Utils.Utils.*;
 
 public class OrderCreator {
     public static Order randomOrder(String [] colour){
-
         return  new Order()
                 .firstName(randomString(20))
                 .lastName(randomString(20))

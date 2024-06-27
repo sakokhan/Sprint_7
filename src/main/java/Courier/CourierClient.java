@@ -1,11 +1,8 @@
 package Courier;
 
 import Models.Courier;
-import com.google.gson.Gson;
 import io.restassured.response.Response;
-
 import static io.restassured.RestAssured.given;
-
 public class CourierClient {
     private static final String CREATE_ENDPOINT = "api/v1/courier";
     private static final String GET_LOGIN_ENDPOINT = "api/v1/courier/login";

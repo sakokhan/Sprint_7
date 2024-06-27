@@ -11,11 +11,9 @@ public class Courier {
     public String getLogin() {
         return login;
     }
-
     public String getPassword() {
         return password;
     }
-
    public Courier withLogin(String login){
         this.login = login;
         return this;

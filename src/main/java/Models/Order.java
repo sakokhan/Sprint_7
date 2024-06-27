@@ -13,8 +13,8 @@ public class Order {
     private String phone;
      private int rentTime;
      private String deliveryDate;
-    private String comment;
     private String [] color;
+    private String comment;
 
     public Order firstName(String firstName){
         this.firstName = firstName;

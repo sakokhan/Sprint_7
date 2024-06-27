@@ -3,7 +3,6 @@ package Utils;
 import java.time.Instant;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
-
 public class Utils {
     public static String randomString(int length){
         Random random = new Random();
@@ -26,7 +25,6 @@ public class Utils {
         max -= min;
         return (int) (Math.random() * ++max) + min;
     }
-
     public static Instant timestamp() {
         return Instant.ofEpochSecond(ThreadLocalRandom.current().nextInt(5));
     }

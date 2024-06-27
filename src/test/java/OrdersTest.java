@@ -8,7 +8,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import static Models.OrderCreator.randomOrder;
 import static org.apache.http.HttpStatus.SC_CREATED;
 import static org.hamcrest.CoreMatchers.notNullValue;
@@ -17,7 +16,6 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 public class OrdersTest {
     public static final String BASE_URL = "https://qa-scooter.praktikum-services.ru";
     private OrderClient orderClient;
-
     @Before
     public void setUp() {
         RestAssured.baseURI = BASE_URL;

@@ -7,7 +7,6 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.junit.Before;
 import org.junit.Test;
-
 import static org.apache.http.HttpStatus.SC_OK;
 import static org.hamcrest.CoreMatchers.notNullValue;
 
@@ -37,7 +36,6 @@ public class OrderListTest {
         OrderList orderList = new OrderList();
         checkResponse(getOrderList(orderList));
     }
-
     @Test
     @DisplayName("Список заказов")
     @Description("10 заказов, доступных курьеру")
