@@ -1,5 +1,5 @@
-import Models.Order;
-import Order.OrderClient;
+import models.Order;
+import order.OrderClient;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import static Models.OrderCreator.randomOrder;
+import static models.OrderCreator.randomOrder;
 import static org.apache.http.HttpStatus.SC_CREATED;
 import static org.hamcrest.CoreMatchers.notNullValue;
 

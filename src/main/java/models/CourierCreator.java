@@ -1,5 +1,5 @@
-package Models;
-import static Utils.Utils.randomString;
+package models;
+import static utils.Utils.randomString;
 public class CourierCreator {
     public static Courier randomCourierAllAttributes() {
 

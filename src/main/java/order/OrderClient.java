@@ -1,7 +1,7 @@
-package Order;
+package order;
 
-import Models.Order;
-import Models.OrderList;
+import models.Order;
+import models.OrderList;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 public class OrderClient {

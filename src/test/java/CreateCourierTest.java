@@ -1,5 +1,5 @@
-import Courier.CourierClient;
-import Models.Courier;
+import courier.CourierClient;
+import models.Courier;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
@@ -9,7 +9,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static Models.CourierCreator.randomCourierAllAttributes;
+import static models.CourierCreator.randomCourierAllAttributes;
 import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.CoreMatchers.equalTo;
 
@@ -31,7 +31,7 @@ public class CreateCourierTest {
     }
     @Step
     public Response makeRegistration(Courier courier) {
-        Response response = courierClient.create(courier);
+        Response response = courierClient.createCourier(courier);
         return response;
     }
 
@@ -79,6 +79,6 @@ public class CreateCourierTest {
 
     }
     @After
-    public void tearDown(){courierClient.delete(id);}
+    public void tearDown(){courierClient.deleteCourier(id);}
 
 }

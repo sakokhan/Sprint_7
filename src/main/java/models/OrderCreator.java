@@ -1,5 +1,5 @@
-package Models;
-import static Utils.Utils.*;
+package models;
+import static utils.Utils.*;
 
 public class OrderCreator {
     public static Order randomOrder(String [] colour){
